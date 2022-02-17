@@ -55,13 +55,7 @@ elementosHTML_3.forEach(elementoHTML => {
 })
 
 async function clientFetch() {
-    let json = {
-            clientGuilds: 123,
-            clientCommands: 59,
-            clientMembers: 30000,
-            clientVotes: 3
-        }
-        // let json = await fetch('https://www.webmaplebot.ml/api/post/').then(m => m.json())
+    let json = await fetch('https://restnekoapi.herokuapp.com/api/post/').then(m => m.json())
     document.getElementById('servers').cantidadtotal = json.clientGuilds
     document.getElementById('commands').cantidadtotal = json.clientCommands
     document.getElementById('users').cantidadtotal = json.clientMembers
