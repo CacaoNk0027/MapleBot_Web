@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Maple Bot | Principal</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="api/public/assets/iconMaple.png">
+    <meta name="theme-color" content="#ffff89">
+    <meta property="og:site_name" content="Maple Bot Oficial">
+    <link rel="stylesheet" href="api/public/styles/indexCSS.css">
+    <link rel="stylesheet" href="api/public/styles/themeCSS.css">
+    <link rel="stylesheet" href="api/public/styles/pagescss/inicialCSS.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body onload="uploadTheme();" class="theme-white">
+    <div class="inicialBar-thWhite" id="navBar">
+        <nav class="nav_bar">
+            <ul class="nav_menu boxesCelMenu-White" id="navMenu">
+                <button class="navOption navOption-thWhite" name="navButton"
+                    onclick="clickRedirect(document.getElementById('redic_cmds'))" id="redic_cmds">Comandos</button>
+                <button class="navOption navOption-thWhite" name="navButton"
+                    onclick="clickRedirect(document.getElementById('redic_inv'))" id="redic_inv">Invitación</button>
+                <button class="navOption navOption-thWhite" name="navButton"
+                    onclick="clickRedirect(document.getElementById('redic_srv'))" id="redic_srv">Servidor</button>
+                <button class="navOption navOption-thWhite" name="navButton"
+                    onclick="clickRedirect(document.getElementById('redic_vote'))" id="redic_vote">Vota!</button>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="nav_menu2">
+                <button class="navOption navOption-thWhite" name="navButton"
+                    onclick="mostMenu(document.getElementById('navMenu'))">Menu</button>
+            </ul>
+        </nav>
+    </div>
+    <header class="banner" id="particles-js"></header>
+    <div align="center">
+        <div class="maple boxMapleWhite" id="mapleBox">
+            <h1 id="clientName"></h1>
+            <h3 id="clientTag"></h3>
+        </div>
+    </div>
+    <div align="center" class="avatarBoxes">
+        <div class="avatar float mapleAvatarWhite" id="mapleAvatar"></div>
+    </div>
+    <div class="container">
+        <h3 class="cat-inicial">Categorias Destacadas</h3>
+        <div class="categorias ocultar" name="scroll">
+            <div class="cuadro cuaderWhite" align="center">
+                <div class="cat_infoCommand">
+                    <div class="cat_imgMod imgCuaderWhite" name="category"></div>
+                    <h4>Moreración</h4>
+                    <p>Manten tu server seguro y a tu comunidad también con los comandos de <a
+                            href="/commmands#moderation" class="link">Moderación</a></p>
+                </div>
+            </div>
+            <div class="cuadro cuaderWhite" align="center">
+                <div class="cat_infoCommand">
+                    <div class="cat_imgAction imgCuaderWhite" name="category"></div>
+                    <h4>Acción</h4>
+                    <p>Abrochense los cinturones! que la aventura se aproxima con los comandos de <a
+                            href="/commands/action" class="link">Acción</a></p>
+                </div>
+            </div>
+            <div class="cuadro cuaderWhite" align="center">
+                <div class="cat_infoCommand">
+                    <div class="cat_imgReaction imgCuaderWhite" name="category"></div>
+                    <h4>Reacción</h4>
+                    <p>Desde una simple vista sin accion hasta una risa sin control! Bienvenido a Rolplay <a
+                            href="/commands#reaction" class="link">Reacción</a></p>
+                </div>
+            </div>
+            <div class="cuadro cuaderWhite" align="center">
+                <div class="cat_infoCommand">
+                    <div class="cat_imgConfig imgCuaderWhite" name="category"></div>
+                    <h4>Cofiguración</h4>
+                    <p>Configuremos tu server! Bienvenidas?, Confesiones? Prefix? dile hola a <a
+                            href="/commands#configs" class="link">Configuración</a></p>
+                </div>
+            </div>
+        </div>
+        <h3 class="titles ocultar" name="scroll">Acerca de Maple Bot</h3>
+        <p class="ocultar" name="scroll">Hola soy ! ɪʟᴏᴠᴇ ᴜ #0027, soy desarrollador oficial de Maple Bot y vengo a
+            hablarte de ella</p>
+        <div class="acercaDe">
+            <p class="ocultar" name="scroll">Maple es una bot multifuncional creada el 16 de Marzo de 2021, asi es, el
+                año donde aun estaba la pandemia, pese a esta situacion muchas personas tuvieron que hacer todo desde su
+                casa y pues con ello el conocer nuevas personas no fue una exepción.
+                Personas entraron a discord y auquellos usuarios no tenian ni la minima idea de como crear su propia
+                comunidad y como hacer que se vuelva un lugar bonito, por lo que un equipo de amigos y yo decidimos
+                pensar en hacer un bot, uno multifuncional
+                y en español, para que los usuarios de nuevo ingreso a discord puedan obtener una mano, y asi fue como
+                creamos a Maple bot! una bot Multifuncional que contiene alrededor de 11 categorias y mas de 100
+                comandos! su proposito? simplemente
+                hacer que las personas puedan entender mejor sobre discord y acortar algunas funciones que comunmente
+                requieren de algo de tiempo.. espero disfruten de la bot y le den mucho apoyo para que este proyecto en
+                el que todos participan siga
+                creciendo.
+            </p>
+            <iframe src="https://discord.com/widget?id=821458416450273340&theme=dark" allowtransparency="true"
+                frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+                class="ocultar wigDiscord" name="scroll"></iframe>
+        </div>
+        <h3 class="titles ocultar" name="scroll">¿Por qué elegir a maple?</h3>
+        <div class="reasons">
+            <div class="boxReason-1">
+                <img src="/api/public/assets/easyToUse.png" alt="" class="ocultarIzquierda" name="scrollByLeft">
+                <div class="ocultarDerecha" name="scrollByRigth">
+                    <h4>Facil de usar</h4>
+                    <p>Tratamos de hacer que nuestra bot sea facil de configurar y usar, queremos dar ayuda para hacer
+                        que tengas una linda comunidad, no complicar las cosas y que todo sea en vano</p>
+                </div>
+            </div>
+            <div class="boxReason-2">
+                <img src="/api/public/assets/spanishBot.png" alt="" class="ocultarDerecha" name="scrollByRigth">
+                <div class="ocultarIzquierda" name="scrollByLeft">
+                    <h4>Bot en Español</h4>
+                    <p>Casi el 100% de los comandos pueden ser usados tambien en español aparte de ingles, las
+                        descripciones de comandos y respuestas estan completamente en español! no tienes que preocupare
+                        en traducir textos, almenos de que tu idioma natal
+                        sea ingles..</p>
+                </div>
+            </div>
+            <div class="boxReason-1">
+                <img src="/api/public/assets/Welcomes.png" alt="" class="ocultarIzquierda" name="scrollByLeft">
+                <div class="ocultarDerecha" name="scrollByRigth">
+                    <h4>Herramientas utiles</h4>
+                    <p>La bot cuenta con sistema de Bienvenidas, Despedidas, Confesiones, Sugerencias, Blacklist, Etc.
+                        Son herramientas que quizas mejoren tu servidor, todo esto en la categoria Configuración de la
+                        bot</p>
+                </div>
+            </div>
+            <div class="boxReason-2">
+                <img src="/api/public/assets/confiance.png" alt="" class="ocultarDerecha" name="scrollByRigth">
+                <div class="ocultarIzquierda" name="scrollByLeft">
+                    <h4>Seguridad y confianza</h4>
+                    <p>Todos los datos que almacenes en esta bot son secretos y nadie mas que tu puedes acceder a ellos,
+                        toma en cuenta que la bot no te perdira contraseñas ni tokens o algo por el estilo</p>
+                    <p>Para mas informacion lee la <a href="/privacy-policy" class="link">politica de privacidad</a></p>
+                </div>
+            </div>
+        </div>
+        <h1 class="titles ocultar" name="scroll">Estadisticas</h1>
+        <div class="contadores-principales ocultar" name="scroll">
+            <div class="contador">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="90" fill="currentColor"
+                    class="bi bi-discord transparentFloat" viewBox="0 0 16 16">
+                    <path
+                        d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z" />
+                </svg>
+                <div class="contador_cantidad ocultarCantidad" id="servers">0</div>
+                <h2>Servidores</h2>
+            </div>
+            <div class="contador">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="90" fill="currentColor"
+                    class="bi bi-people-fill inverse_float users-color" viewBox="0 0 16 16"
+                    style="margin: 5px 0; padding-bottom: 2px;">
+                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    <path fill-rule="evenodd"
+                        d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+                    <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                </svg>
+                <div class="contador_cantidad ocultarCantidad" id="users">0</div>
+                <h2>Usuarios</h2>
+            </div>
+            <div class="contador">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="90" fill="currentColor"
+                    class="bi bi-code-slash transparentFloat code-color" viewBox="0 0 16 16"
+                    style="margin: 5px 0; padding-bottom: 2px;">
+                    <path
+                        d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
+                </svg>
+                <div class="contador_cantidad ocultarCantidad" id="commands">0</div>
+                <h2>Comandos</h2>
+            </div>
+            <div class="contador">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="90" fill="currentColor"
+                    class="bi bi-heart-fill inverse_float votes-color" viewBox="0 0 16 16"
+                    style="margin: 5px 0; padding-bottom: 2px;">
+                    <path fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                </svg>
+                <div class="contador_cantidad ocultarCantidad" id="votes">0</div>
+                <h2>Votos</h2>
+            </div>
+        </div>
+        <h1 class="titles ocultar" name="scroll">Nuestro equipo</h1>
+        <div>
+            <div class="boxImgTeam">
+                <div class="helperAvatar ocultar" id="jimAvatar" name="scroll"
+                    onclick="most(document.getElementById('jimAvatar')); textMost(document.getElementById('aboutJim'));">
+                </div>
+                <div class="helperAvatar ocultar" id="krazyAvatar" name="scroll"
+                    onclick="most(document.getElementById('krazyAvatar')); textMost(document.getElementById('aboutKrazy'));">
+                </div>
+                <div class="helperAvatar ocultar" id="cacaoAvatar" name="scroll"
+                    onclick="most(document.getElementById('cacaoAvatar')); textMost(document.getElementById('aboutCacao'));">
+                </div>
+                <div class="helperAvatar ocultar" id="willyAvatar" name="scroll"
+                    onclick="most(document.getElementById('willyAvatar')); textMost(document.getElementById('aboutWilly'));">
+                </div>
+            </div>
+            <div class="boxImgTeam_2">
+                <div class="dispRigth">
+                    <div class="helperAvatar ocultar" id="jimAvatar2" name="scroll"
+                        onclick="most(document.getElementById('jimAvatar2')); textMost(document.getElementById('aboutJim2'));">
+                    </div>
+                    <div class="aboutHelper ocultar ocultarTexto" id="aboutJim2">
+                        <h3 id="userNameJim2"></h3>
+                        <h4 id="userTagJim2" style="font-size: 17px;"></h4>
+                        <p>Es un ayudante del servidor oficial de maple bot, ayuda en dudas y de vez en cuando con maple
+                        </p>
+                    </div>
+                </div>
+                <div class="dispLeft">
+                    <div class="helperAvatar  ocultar" id="krazyAvatar2" name="scroll"
+                        onclick="most(document.getElementById('krazyAvatar2')); textMost(document.getElementById('aboutKrazy2'));">
+                    </div>
+                    <div class="aboutHelper ocultar ocultarTexto" id="aboutKrazy2">
+                        <h3 id="userNameKrazy2"></h3>
+                        <h4 id="userTagKrazy2" style="font-size: 17px;"></h4>
+                        <p>Es un desarrollador secundario de la bot, ayuda con el codigo de la bot</p>
+                    </div>
+                </div>
+                <div class="dispRigth">
+                    <div class="helperAvatar ocultar" id="cacaoAvatar2" name="scroll"
+                        onclick="most(document.getElementById('cacaoAvatar2')); textMost(document.getElementById('aboutCacao2'));">
+                    </div>
+                    <div class="aboutHelper ocultar ocultarTexto" id="aboutCacao2">
+                        <h3 id="userNameCacao2"></h3>
+                        <h4 id="userTagCacao2" style="font-size: 17px;"></h4>
+                        <p>Es el desarrollador oficial de la bot, escribe el codigo y brinda soporte</p>
+                    </div>
+                </div>
+                <div class="dispLeft">
+                    <div class="helperAvatar ocultar" id="willyAvatar2" name="scroll"
+                        onclick="most(document.getElementById('willyAvatar2')); textMost(document.getElementById('aboutWilly2'));">
+                    </div>
+                    <div class="aboutHelper ocultar ocultarTexto" id="aboutWilly2">
+                        <h3 id="userNameWilly2"></h3>
+                        <h4 id="userTagWilly2" style="font-size: 17px;"></h4>
+                        <p>Al igual que Jim, es una ayudante y puede responder dudas asi como ayudar con la bot</p>
+                    </div>
+                </div>
+            </div>
+            <div class="boxTextTeam">
+                <div class="aboutHelper ocultar ocultarTexto" id="aboutJim">
+                    <h3 id="userNameJim"></h3>
+                    <h4 id="userTagJim" style="font-size: 17px;"></h4>
+                    <p>Es un ayudante del servidor oficial de maple bot, ayuda en dudas y de vez en cuando con maple</p>
+                </div>
+                <div class="aboutHelper ocultar ocultarTexto" id="aboutKrazy">
+                    <h3 id="userNameKrazy"></h3>
+                    <h4 id="userTagKrazy" style="font-size: 17px;"></h4>
+                    <p>Es un desarrollador secundario de la bot, ayuda con el codigo de la bot</p>
+                </div>
+                <div class="aboutHelper ocultar ocultarTexto" id="aboutCacao">
+                    <h3 id="userNameCacao"></h3>
+                    <h4 id="userTagCacao" style="font-size: 17px;"></h4>
+                    <p>Es el desarrollador oficial de la bot, escribe el codigo y brinda soporte</p>
+                </div>
+                <div class="aboutHelper ocultar ocultarTexto" id="aboutWilly">
+                    <h3 id="userNameWilly"></h3>
+                    <h4 id="userTagWilly" style="font-size: 17px;"></h4>
+                    <p>Al igual que Jim, es una ayudante y puede responder dudas asi como ayudar con la bot</p>
+                </div>
+            </div>
+        </div>
+        <hr style="margin-top: 10px;">
+        <div align="center">
+            <div class="ocultar mapleImgDesp float" name="scroll" id="despImg"></div>
+        </div>
+        <div class="contentDesp ocultar" name="scroll">
+            <p>Recuerda que puedes unirte a el servidor de soporte de la bot, asi como tambien puedes apoyarla votando
+                por ella en top.gg, si tienes alguna duda o sugerencia no dudes en contactar al desarollador oficial de
+                la bot y recuerda seguir las normas de la bot para evitar que entres en la lista negra de la bot</p>
+            <a href="https://top.gg/bot/821452429409124451">
+                <img src="https://top.gg/api/widget/821452429409124451.svg">
+            </a>
+        </div>
+    </div>
+    <div id="footerTheme" class="fooTheme-white">
+        <div class="boxFooter">
+            <h2 id="clientUserTag"></h2>
+            <div class="params">
+                <a href="" class="paramsLink paramOption">Discord</a>
+                <a href="" class="paramsLink paramOption">Invitación</a>
+                <a href="" class="paramsLink paramOption">Top.gg</a>
+            </div>
+        </div>
+        <div class="flexFooter">
+            <div class="terms">
+                <p>© 2021 <a href="" class="link">Maple bot.</a> All rights reserved. Made by <a href="" class="link"
+                        id="cacaoName"></a></p>
+                <p> Al usar el bot estas aceptando los <a href="" class="link">Terminos de uso</a> y la <a href=""
+                        class="link">Politica de privacidad</a></p>
+            </div>
+            <div class="switchBox">
+                <label class="switch" onchange="changeTheme()" id="onoff-theme">
+                    <input type="checkbox">
+                    <span class="slider round" id="onoff-button"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="api/public/scripts/scroll.js"></script>
+    <script type="text/javascript" src="api/public/scripts/thStyleJS.js"></script>
+    <script type="text/javascript" src="api/public/scripts/pages/indexJS.js"></script>
+    <script type="text/javascript" src="api/public/plugins/particles/particles.js"></script>
+    <script type="text/javascript" src="api/public/plugins/particles/app.js"></script>
+    <script type="text/javascript" src="api/public/plugins/particles/lib/stats.js"></script>
+</body>
+
+</html>

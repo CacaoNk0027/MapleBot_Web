@@ -1,0 +1,523 @@
+a.link {
+    text-decoration: none;
+    color: rgb(0, 115, 255);
+    transition: .3s;
+}
+
+a.link:hover {
+    text-decoration: none;
+    color: rgb(60, 148, 255)
+}
+
+.maple {
+    padding: 50px 0px 15px 0px;
+    border-radius: 3px;
+    width: 350px;
+    text-align: center;
+}
+
+.avatarBoxes {
+    transform: translateY(-295px);
+}
+
+.avatar {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-size: 170px;
+}
+
+.float {
+    box-shadow: 0px 5px 15px 0px;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+.cat-inicial {
+    transform: translateY(-80px);
+}
+
+.categorias {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    margin: 0px 80px;
+}
+
+.cuadro {
+    border-radius: 4px;
+    padding: 30px 8px;
+    height: 276px;
+    box-shadow: 0px 5px 10px;
+}
+
+.cat_imgMod {
+    background-image: url('/api/public/assets/mods.svg');
+    width: 100px;
+    height: 100px;
+    background-position-x: 1.3px;
+    background-position-y: 3.8px;
+    border-radius: 50%;
+    transform: translateY(-25px);
+}
+
+.cat_imgAction {
+    background-image: url('/api/public/assets/zeroKiss.png');
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    background-size: 80px 80px;
+    background-position-x: 5.3px;
+    background-position-y: 15.5px;
+    border-radius: 50%;
+    transform: translateY(-25px);
+}
+
+.cat_imgReaction {
+    background-image: url('/api/public/assets/angry.png');
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    background-size: 80px 80px;
+    background-position-x: 13.5px;
+    background-position-y: 14.5px;
+    border-radius: 50%;
+    transform: translateY(-25px);
+}
+
+.cat_imgConfig {
+    background-image: url('/api/public/assets/config.svg');
+    width: 100px;
+    height: 100px;
+    background-position-x: 5.3px;
+    background-position-y: -0.5px;
+    border-radius: 50%;
+    transform: translateY(-25px);
+}
+
+.cat_infoCommand {
+    transform: translateY(-54px);
+}
+
+.titles {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.acercaDe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.acercaDe p {
+    margin-right: 80px;
+}
+
+.boxReason-1 {
+    margin: 40px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.boxReason-1 img {
+    border-radius: 7px;
+    box-shadow: 0px 0px 15px;
+    transition: .4;
+}
+
+.boxReason-1 div {
+    text-align: right;
+    margin: 0px 90px;
+}
+
+.boxReason-2 {
+    margin: 40px 65px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.boxReason-2 img {
+    border-radius: 7px;
+    box-shadow: 0px 0px 15px;
+    transition: .4;
+}
+
+.boxReason-2 div {
+    text-align: left;
+    margin: 0px 90px;
+}
+
+
+/* contadores */
+
+.contadores-principales {
+    display: grid;
+    text-align: center;
+    margin: 50px 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+}
+
+.contador {
+    text-align: center;
+}
+
+.contador_cantidad {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.bi-discord {
+    color: hsl(235, calc(85.6%), 64.7%)
+}
+
+.users-color {
+    color: #7f7f7f;
+}
+
+.code-color {
+    color: #434343;
+}
+
+.votes-color {
+    color: #ed4646;
+}
+
+.transparentFloat {
+    box-shadow: 0px 5px 15px 0px transparent;
+    transform: translateY(0px);
+    animation: transparenFloat 5s ease-in-out infinite;
+}
+
+.inverse_float {
+    box-shadow: 0px 25px 15px 0px transparent;
+    transform: translateY(-10px);
+    animation: inverse_float 5s ease-in-out infinite;
+}
+
+.animarCantidad {
+    animation: aparecerCantidad 1.3s;
+}
+
+.ocultarCantidad {
+    opacity: 0;
+}
+
+.boxImgTeam {
+    display: grid;
+    text-align: center;
+    margin: 50px 80px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+}
+
+.helperAvatar {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    background-size: 115px;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0px 0px 10px;
+}
+
+.aboutHelper {
+    width: 130px;
+}
+
+.helperAvatar:hover {
+    width: 119px;
+    height: 119px;
+    border-radius: 50%;
+    background-size: 119px;
+    box-shadow: 0px 0px 15px;
+}
+
+.helperAvatarActive {
+    width: 119px;
+    height: 119px;
+    border-radius: 50%;
+    background-size: 119px;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px;
+}
+
+.boxTextTeam {
+    display: grid;
+    text-align: center;
+    margin: 50px 80px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 90px;
+}
+
+.aparecerTexto {
+    animation: aparecerTexto 1.3s;
+}
+
+.ocultarTexto {
+    animation: ocultarTexto 1.3s;
+}
+
+.mapleImgDesp {
+    background-image: url('/api/public/assets/mapleNeko.gif');
+    background-size: 230px;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    margin-top: 45px;
+}
+
+.contentDesp {
+    display: flex;
+    margin: 50px 100px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.contentDesp p {
+    margin: 0;
+}
+
+.boxFooter {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.params {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    font-weight: 500;
+    justify-content: center;
+}
+
+.paramsLink {
+    color:rgb(90, 90, 90);
+    transition: .2s;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 7px;
+}
+
+.paramsLink:hover {
+    color:rgb(120, 120, 120);
+    text-decoration: none;
+    font-size: 22px;
+    padding: 5px;
+}
+
+.wigDiscord {
+    width: 350px;
+    height: 340px;
+    margin-right: 40px;
+}
+
+.boxImgTeam_2 {
+    display: none;
+}
+
+@keyframes aparecerCantidad {
+    0% {
+        opacity: 0;
+        transform: translateX(30px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+@keyframes ocultarTexto {
+    0% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(10px)
+    }
+}
+
+@keyframes aparecerTexto {
+    0% {
+        opacity: 0;
+        transform: translateY(10px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+@keyframes transparenFloat {
+    0% {
+        box-shadow: 0px 5px 15px 0px transparent;
+        transform: translateY(0px);
+    }
+    50% {
+        box-shadow: 0px 25px 15px 0px transparent;
+        transform: translateY(-10px);
+    }
+    100% {
+        box-shadow: 0px 5px 15px 0px transparent;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes inverse_float {
+    0% {
+        box-shadow: 0px 25px 15px 0px transparent;
+        transform: translateY(-10px);
+    }
+    50% {
+        box-shadow: 0px 5px 15px 0px transparent;
+        transform: translateY(0px);
+    }
+    100% {
+        box-shadow: 0px 25px 15px 0px transparent;
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes float {
+    0% {
+        box-shadow: 0px 5px 15px 0px;
+        transform: translateY(0px);
+    }
+    50% {
+        box-shadow: 0px 5px 15px 0px;
+        transform: translateY(-10px);
+    }
+    100% {
+        box-shadow: 0px 5px 15px 0px;
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 650px) {
+    .categorias {
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 79px;
+        column-gap: 13px;
+        margin: 0 5px;
+    }
+    .contadores-principales {
+        display: grid;
+        text-align: center;
+        margin: 40px 15px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 19px;
+        align-items: center;
+    }
+    .boxImgTeam {
+        display: grid;
+        text-align: center;
+        margin: 50px 80px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 100px;
+    }
+    .maple {
+        padding: 50px 0px 15px 0px;
+        border-radius: 3px;
+        width: 220px;
+        text-align: center;
+    }
+    .avatarBoxes {
+        transform: translateY(-260px)
+    }
+    .avatar {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background-size: 140px;
+    }
+    .params {
+        display: flex;
+        font-weight: 500;
+        flex-direction: column;
+        align-items: center;
+        gap: 0
+    }
+    .titles {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .acercaDe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .acercaDe p {
+        margin: 0;
+    }
+    .wigDiscord {
+        width: 320px;
+        height: 340px;
+        margin-right: 0;
+    }
+    .boxReason-1 div {
+        margin: 0;
+        text-align: center;
+    }
+    .boxReason-1 {
+        margin: 40px 20px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: normal;
+    }
+    .boxReason-2 {
+        margin: 40px 20px;
+        display: flex;
+        align-items: normal;
+        flex-direction: column-reverse;
+    }
+    .boxReason-2 div {
+        text-align: center;
+        margin: 0;
+    }
+    .boxImgTeam {
+        display: none;
+    }
+    .boxTextTeam {
+        display: none;
+    }
+
+    .boxImgTeam_2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .dispRigth {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 10px;
+        gap: 50px;
+    }
+    .dispLeft {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 10px;
+        gap: 50px;
+    }
+    .contentDesp {
+        display: flex;
+        margin: 50px 6px;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-between;
+        flex-direction: column;    
+    }
+}

@@ -1,0 +1,130 @@
+.theme-white {
+    background-color: var(--inicial-theme-white);
+    color: var(--text-whiteMode-color);
+    transition: .4s;
+}
+
+.theme-dark {
+    background-color: var(--inicial-theme-dark);
+    color: var(--text-darkMode-color);
+    transition: .4s;
+}
+
+.fooTheme-white {
+    background: var(--secondary-theme-white);
+    margin-top: 30px;
+    border-top: 1px solid rgb(132, 132, 132);
+    padding: 35px 0px 10px 0px;
+    transition: .4s;
+}
+
+.fooTheme-dark {
+    background: var(--secondary-theme-dark);
+    margin-top: 30px;
+    border-top: 1px solid rgb(50, 50, 50);
+    padding: 35px 0px 10px 0px;
+    transition: .4s;
+}
+
+.inicialBar-thDark {
+    background-color: var(--secondary-theme-dark);
+    transition: .4s;
+}
+
+.inicialBar-thWhite {
+    background-color: var(--secondary-theme-white);
+    transition: .4s;
+}
+
+.navOption-thDark {
+    background-color: var(--nav-thButtonDark-color);
+    color: var(--text-darkMode-color);
+    border-right: 1px solid #1e1e1e;
+    border-left: 1px solid #1e1e1e;
+    border-top: none;
+    border-bottom: none;
+    transition: .4s;
+}
+
+.navOption-thDark:hover {
+    background-color: var(--navHover-thButtonDark-color);
+}
+
+.navOption-thWhite {
+    background-color: var(--nav-thButtonWhite-color);
+    color: var(--text-whiteMode-color);
+    border-right: 1px solid #d5d5d5;
+    border-left: 1px solid #d5d5d5;
+    border-top: none;
+    border-bottom: none;
+    transition: .4s;
+}
+
+.navOption-thWhite:hover {
+    background-color: var(--navHover-thButtonWhite-color);
+}
+
+.boxMapleWhite {
+    background-color: var(--text-darkMode-color);
+    box-shadow: 0px -50px var(--text-darkMode-color);
+    transition: .4s;
+}
+
+.boxMapleDark {
+    background-color: var(--text-whiteMode-color);
+    box-shadow: 0px -50px var(--text-whiteMode-color);
+    transition: .4s;
+}
+
+.mapleAvatarWhite {
+    border: 5px solid var(--text-darkMode-color);
+    transition: .4s;
+}
+
+.mapleAvatarDark {
+    border: 5px solid var(--text-whiteMode-color);
+    transition: .4s;
+}
+
+.cuaderDark {
+    background: linear-gradient(to bottom, rgb(32 32 32), rgb(32 32 32 / 38%));
+    transition: .4s;
+}
+
+.cuaderWhite {
+    background: linear-gradient(to bottom, rgb(176, 176, 176), rgb(176 176 167 / 38%));
+    transition: .4s;
+}
+
+.imgCuaderWhite {
+    background-color: #c3c3c3;
+    border: 3px solid #b1b1b1;
+    transition: .4s;
+}
+
+.imgCuaderDark {
+    background-color: #2e2e2e;
+    border: 3px solid #202020;
+    transition: .4s;
+}
+
+.boxesCelMenu-White {
+    background-color: var(--secondary-theme-white);
+}
+
+.boxesCelMenu-Dark {
+    background-color: var(--secondary-theme-dark);
+}
+
+:root {
+    --inicial-theme-dark: rgb(57, 56, 56);
+    --secondary-theme-dark: rgb(23, 23, 23);
+    --text-darkMode-color: rgb(184, 184, 184);
+    --inicial-theme-white: rgb(255, 255, 255);
+    --secondary-theme-white: rgb(208, 208, 208);
+    --text-whiteMode-color: rgb(39 39 39);
+    --nav-thButtonDark-color: rgb(25 25 25);
+    --nav-thButtonWhite-color: rgb(229 229 229);
+    --navHover-thButtonDark-color: rgb(38 38 38);
+    --navHover-thButtonWhite-color: rgb(220 220 220);
+}

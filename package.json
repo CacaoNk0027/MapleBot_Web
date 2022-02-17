@@ -1,0 +1,31 @@
+{
+    "name": "webmaplebotml",
+    "version": "1.0.0",
+    "description": "Pagina web de maple bot",
+    "main": "src/main.js",
+    "readme": "README.md",
+    "scripts": {
+        "gitUp": "git add . && git commit -am \"make it better\"",
+        "start": "node .",
+        "dev": "nodemon node ."
+    },
+    "engines": {
+        "node": "17.x"
+    },
+    "keywords": [
+        "Maple Bot",
+        "Bot Discord",
+        "Pagina Web"
+    ],
+    "author": "CacaoNk0027",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.0.0",
+        "ejs": "^3.1.6",
+        "express": "^4.17.2",
+        "path": "^0.12.7"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}
