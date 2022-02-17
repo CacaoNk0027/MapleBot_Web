@@ -57,7 +57,7 @@ elementosHTML_3.forEach(elementoHTML => {
 async function clientFetch() {
     let json = await fetch('https://restnekoapi.herokuapp.com/api/post/').then(m => m.json())
     document.getElementById('servers').cantidadtotal = json.clientGuilds
-    document.getElementById('commands').cantidadtotal = json.clientCommands
+    document.getElementById('commands').cantidadtotal = json.clientCommands.length
     document.getElementById('users').cantidadtotal = json.clientMembers
     document.getElementById('votes').cantidadtotal = json.clientVotes
 }
