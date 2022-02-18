@@ -19,3 +19,14 @@ async function clientUser() {
     document.getElementById('clientTag').innerText = clientUser_.discriminator
     document.getElementById('clientUserTag').innerText = clientUser_.usertag
 }; clientUser()
+
+/**
+ * @param {Element} element 
+ */
+ function mostMenu(element) {
+    if(!element.classList.contains('show')) {
+        element.classList.add('show')
+    } else {
+        element.classList.remove('show')
+    }
+}

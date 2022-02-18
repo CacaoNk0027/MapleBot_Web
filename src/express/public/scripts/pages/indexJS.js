@@ -124,17 +124,6 @@ async function willy2() {
     userTag.innerText = clientUser_.discriminator
 }; willy2()
 
-
-/**
- * @param {Element} element 
- */
- function mostMenu(element) {
-    if(!element.classList.contains('show')) {
-        element.classList.add('show')
-    } else {
-        element.classList.remove('show')
-    }
-}
 const elementosHTML_4 = document.querySelectorAll('.contador_cantidad')
 
 async function clientFetch() {
