@@ -6,6 +6,7 @@
 
 /** dependencias iniciales */
 const express = require('express');
+const cors = require('cors')
 // const mongoose = require('mongoose');
 
 /** dependencias secundarias */
@@ -36,6 +37,7 @@ app.set('json spaces', 2);
 
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
+app.use(cors())
 
 app.use(require('./express/index.js'))
 

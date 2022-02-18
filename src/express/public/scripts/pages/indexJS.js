@@ -1,24 +1,3 @@
-function clickRedirect(element) {
-    if (element.id == "redic_cmds") {
-        window.location = "/commands"
-    } else if (element.id == "redic_inv") {
-        window.open('https://discord.com/oauth2/authorize?client_id=821452429409124451&scope=bot%20applications.commands&permissions=533923163350&redirect_uri=https%3A%2F%2Fcdnnekoapicacao.vanillank2006.repl.co%2Fapi%2Fthanks&response_type=code')
-    } else if (element.id == "redic_srv") {
-        window.open('https://discord.gg/PKGhvUKaQN')
-    } else if (element.id == "redic_vote") {
-        window.open('https://top.gg/bot/821452429409124451/vote')
-    }
-}
-
-async function clientUser() {
-    let clientAvatar = document.getElementById('mapleAvatar')
-    let clientUser_ = await fetch('https://nekoapi.vanillank2006.repl.co/api/users?user=client').then(c => c.json())
-    clientAvatar.style.backgroundImage = `url(${clientUser_.avatar})`
-    document.getElementById('clientName').innerText = clientUser_.username
-    document.getElementById('clientTag').innerText = clientUser_.discriminator
-    document.getElementById('clientUserTag').innerText = clientUser_.usertag
-}; clientUser()
-
 async function users() {
     let cacaoDiv = document.getElementById('cacaoAvatar')
     let jimDiv = document.getElementById('jimAvatar')
@@ -45,7 +24,6 @@ async function users_2() {
     let jimDiv = document.getElementById('jimAvatar2')
     let krazyDiv = document.getElementById('krazyAvatar2')
     let willyDiv = document.getElementById('willyAvatar2')
-    let cacaoName = document.getElementById('cacaoName2')
     
     let CacaoUser_ = await fetch('https://nekoapi.vanillank2006.repl.co/api/users?user=cacao').then(c => c.json())
     let KrazyUser = await fetch('https://nekoapi.vanillank2006.repl.co/api/users?user=krazy').then(c => c.json())
@@ -56,7 +34,6 @@ async function users_2() {
     jimDiv.style.backgroundImage =`url(${JimUser.avatar})`
     krazyDiv.style.backgroundImage = `url(${KrazyUser.avatar})`
     willyDiv.style.backgroundImage = `url(${WillyUser.avatar})`
-    cacaoName.innerText = CacaoUser_.username
 
 }; users_2()
 
@@ -158,3 +135,65 @@ async function willy2() {
         element.classList.remove('show')
     }
 }
+const elementosHTML_4 = document.querySelectorAll('.contador_cantidad')
+
+async function clientFetch() {
+    let json = await fetch('https://restnekoapi.herokuapp.com/api/post/').then(m => m.json())
+    document.getElementById('servers').cantidadtotal = json.clientGuilds
+    document.getElementById('commands').cantidadtotal = json.clientCommands.length
+    document.getElementById('users').cantidadtotal = json.clientMembers
+    document.getElementById('votes').cantidadtotal = json.clientVotes
+}
+
+clientFetch()
+
+window.addEventListener('DOMContentLoaded', function() {
+    const contadores = document.querySelectorAll('.contador_cantidad')
+    const velocidad = 2000;
+
+    function animarContadores() {
+        for (const contador of contadores) {
+            function actualizarContador() {
+                var cantidadMaxima = parseInt(contador.cantidadtotal)
+                var valorActual = parseInt(contador.innerText)
+                var incremento = (cantidadMaxima / velocidad)
+                if (valorActual < cantidadMaxima) {
+                    contador.innerText = Math.ceil(valorActual + incremento)
+                    if (cantidadMaxima > 10000) {
+                        setTimeout(actualizarContador, 1);
+                    } else if (cantidadMaxima > 300) {
+                        setTimeout(actualizarContador, 10);
+                    } else if (cantidadMaxima > 100) {
+                        setTimeout(actualizarContador, 60);
+                    } else if (cantidadMaxima > 10) {
+                        setTimeout(actualizarContador, 200);
+                    } else if (cantidadMaxima > 0) {
+                        setTimeout(actualizarContador, 500);
+                    }
+                } else {
+                    contador.innerText = cantidadMaxima
+                }
+            }
+            actualizarContador()
+        }
+    }
+    // IntersectionObserver
+
+    function mostrarContadores(elementos) {
+        elementos.forEach(element => {
+            if (element.isIntersecting == true) {
+                element.target.classList.add('animarCantidad')
+                element.target.classList.remove('ocultarCantidad')
+                setTimeout(animarContadores, 300);
+            }
+        });
+    }
+
+    let observer_4 = new IntersectionObserver(mostrarContadores, {
+        threshold: 0.75
+    })
+
+    elementosHTML_4.forEach(elementoHTML => {
+        observer_4.observe(elementoHTML)
+    })
+})
