@@ -30,3 +30,10 @@ async function clientUser() {
         element.classList.remove('show')
     }
 }
+
+async function cacaoName() {
+    let cacaoUser_ = await fetch('https://nekoapi.vanillank2006.repl.co/api/users?user=cacao').then(c => c.json())
+    document.getElementById('cacaoName').innerText = cacaoUser_.username
+}
+
+cacaoName()

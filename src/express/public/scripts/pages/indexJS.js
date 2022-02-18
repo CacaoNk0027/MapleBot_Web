@@ -3,7 +3,6 @@ async function users() {
     let jimDiv = document.getElementById('jimAvatar')
     let krazyDiv = document.getElementById('krazyAvatar')
     let willyDiv = document.getElementById('willyAvatar')
-    let cacaoName = document.getElementById('cacaoName')
     
     let CacaoUser_ = await fetch('https://nekoapi.vanillank2006.repl.co/api/users?user=cacao').then(c => c.json())
     let KrazyUser = await fetch('https://nekoapi.vanillank2006.repl.co/api/users?user=krazy').then(c => c.json())
@@ -14,7 +13,6 @@ async function users() {
     jimDiv.style.backgroundImage =`url(${JimUser.avatar})`
     krazyDiv.style.backgroundImage = `url(${KrazyUser.avatar})`
     willyDiv.style.backgroundImage = `url(${WillyUser.avatar})`
-    cacaoName.innerText = CacaoUser_.username
 
 }; users()
 
