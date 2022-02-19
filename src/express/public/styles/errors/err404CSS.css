@@ -1,16 +1,35 @@
-
 .container404 {
-    margin: 0;
+    margin: 2pc 35% 2pc 3%;
     cursor: default;
 }
+
 .flex_content {
-    text-align: center;
     display: flex;
-    margin: 2pc;
+    margin: 30px 0 0 5pc;
     align-items: center;
-    flex-direction: column-reverse;
 }
+
 .image {
     width: 17pc;
     filter: opacity(.5);
+}
+
+@media (max-width: 650px) {
+    .container404 {
+        margin: 0 0 0 0;
+        cursor: default;
+    }
+
+    .flex_content {
+        text-align: center;
+        display: flex;
+        margin: 2pc;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .image {
+        width: 17pc;
+        filter: opacity(.5);
+    }
 }
