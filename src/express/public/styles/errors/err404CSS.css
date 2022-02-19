@@ -1,12 +1,14 @@
 
 .container404 {
-    margin: 2pc 35% 2pc 3%;
+    margin: 0;
     cursor: default;
 }
 .flex_content {
+    text-align: center;
     display: flex;
-    margin: 30px 0 0 5pc;
+    margin: 2pc;
     align-items: center;
+    flex-direction: column-reverse;
 }
 .image {
     width: 17pc;
