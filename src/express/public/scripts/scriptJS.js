@@ -18,13 +18,13 @@ async function clientUser() {
     document.getElementById('clientName').innerText = clientUser_.username
     document.getElementById('clientTag').innerText = clientUser_.discriminator
     document.getElementById('clientUserTag').innerText = clientUser_.usertag
-}; clientUser()
+};
 
 /**
  * @param {Element} element 
  */
- function mostMenu(element) {
-    if(!element.classList.contains('show')) {
+function mostMenu(element) {
+    if (!element.classList.contains('show')) {
         element.classList.add('show')
     } else {
         element.classList.remove('show')
@@ -35,5 +35,3 @@ async function cacaoName() {
     let cacaoUser_ = await fetch('https://nekoapi.vanillank2006.repl.co/api/users?user=cacao').then(c => c.json())
     document.getElementById('cacaoName').innerText = cacaoUser_.username
 }
-
-cacaoName()

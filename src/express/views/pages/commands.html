@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <title>Maple Bot | Comandos</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:site_name" content="Maple Bot Oficial">
-        <meta name="theme-color" content="#ffff89">
-        <link rel="shortcut icon" href="https://webmaplebotml.herokuapp.com/api/public/assets/iconMaple.png">
-        <meta name="og:image" content="https://webmaplebotml.herokuapp.com/api/public/assets/mapleNeko.gif">
-        <meta name="description" content="Maple Bot!, estas viendo la pagina de comandos de maple bot" data-ng-src="https://webmaplebotml.herokuapp.com/api/public/assets/iconMaple.png">
-        <link rel="stylesheet" href="api/public/styles/indexCSS.css">
-        <link rel="stylesheet" href="api/public/styles/themeCSS.css">
-        <link rel="stylesheet" href="api/public/styles/pagescss/commandsCSS.css">
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    </head>
+<head>
+    <title>Maple Bot | Comandos</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:site_name" content="Maple Bot Oficial">
+    <meta name="theme-color" content="#ffff89">
+    <link rel="shortcut icon" href="https://webmaplebotml.herokuapp.com/api/public/assets/iconMaple.png">
+    <meta name="og:image" content="https://webmaplebotml.herokuapp.com/api/public/assets/mapleNeko.gif">
+    <meta name="description" content="Maple Bot!, estas viendo la pagina de comandos de maple bot"
+        data-ng-src="https://webmaplebotml.herokuapp.com/api/public/assets/iconMaple.png">
+    <link rel="stylesheet" href="api/public/styles/indexCSS.css">
+    <link rel="stylesheet" href="api/public/styles/themeCSS.css">
+    <link rel="stylesheet" href="api/public/styles/pagescss/commandsCSS.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
 
-<body onload="uploadTheme();" class="theme-white">
+<body onload="uploadTheme(); clientUser(); cacaoName();" class="theme-white">
     <div class="inicialBar-thWhite" id="navBar">
         <nav class="nav_bar">
             <ul class="nav_menu boxesCelMenu-White" id="navMenu">
                 <button class="navOption navOption-thWhite" name="navButton"
-                    onclick="clickRedirect(document.getElementById('redic_inicial'))" id="redic_inicial">Inicial</button>
+                    onclick="clickRedirect(document.getElementById('redic_inicial'))"
+                    id="redic_inicial">Inicial</button>
                 <button class="navOption navOption-thWhite" name="navButton"
                     onclick="clickRedirect(document.getElementById('redic_inv'))" id="redic_inv">Invitación</button>
                 <button class="navOption navOption-thWhite" name="navButton"
@@ -56,7 +58,7 @@
         </div>
         <div class="contentDesp ocultar" name="scroll">
             <p>Recuerda que puedes unirte a el servidor de soporte de la bot, asi como tambien puedes apoyarla votando
-                por ella en top.gg, si tienes alguna duda o sugerencia no dudes en contactar al desarollador oficial 
+                por ella en top.gg, si tienes alguna duda o sugerencia no dudes en contactar al desarollador oficial
                 y recuerda seguir las normas dictadas para evitar que entres en la lista negra de la bot</p>
             <a href="https://top.gg/bot/821452429409124451">
                 <img src="https://top.gg/api/widget/821452429409124451.svg">
@@ -68,7 +70,8 @@
             <h2 id="clientUserTag"></h2>
             <div class="params">
                 <a href="https://discord.gg/PKGhvUKaQN" class="paramsLink paramOption">Discord</a>
-                <a href="https://discord.com/oauth2/authorize?client_id=821452429409124451&scope=bot%20applications.commands&permissions=533923163350&redirect_uri=https%3A%2F%2Fcdnnekoapicacao.vanillank2006.repl.co%2Fapi%2Fthanks&response_type=code" class="paramsLink paramOption">Invitación</a>
+                <a href="https://discord.com/oauth2/authorize?client_id=821452429409124451&scope=bot%20applications.commands&permissions=533923163350&redirect_uri=https%3A%2F%2Fcdnnekoapicacao.vanillank2006.repl.co%2Fapi%2Fthanks&response_type=code"
+                    class="paramsLink paramOption">Invitación</a>
                 <a href="https://top.gg/bot/821452429409124451/vote" class="paramsLink paramOption">Top.gg</a>
             </div>
         </div>

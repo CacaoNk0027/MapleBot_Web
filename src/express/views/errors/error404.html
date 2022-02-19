@@ -2,15 +2,85 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <title>Maple Bot | 404</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta property="og:site_name" content="Maple Bot Oficial">
+    <meta name="theme-color" content="#ffff89">
+    <link rel="shortcut icon" href="https://webmaplebotml.herokuapp.com/api/public/assets/iconMaple.png">
+    <meta name="og:image" content="https://webmaplebotml.herokuapp.com/api/public/assets/mapleNeko.gif">
+    <meta name="description" content="La ruta del link que haz escrito es inexistente! por favor asegurate de escribir la correcta"
+        data-ng-src="https://webmaplebotml.herokuapp.com/api/public/assets/iconMaple.png">
+    <link rel="stylesheet" href="api/public/styles/indexCSS.css">
+    <link rel="stylesheet" href="api/public/styles/themeCSS.css">
+    <link rel="stylesheet" href="api/public/styles/errors/err404CSS.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
-<body>
-    <p>404</p>
-    <p><b><%= pathName %></b> not found</p>
+<body onload="uploadTheme(); userTagClient(); cacaoName();">
+    <div class="inicialBar-thWhite" id="navBar">
+        <nav class="nav_bar">
+            <ul class="nav_menu boxesCelMenu-White" id="navMenu">
+                <button class="navOption navOption-thWhite" name="navButton"
+                    onclick="clickRedirect(document.getElementById('redic_inicial'))" id="redic_inicial">Inicial</button>
+                <button class="navOption navOption-thWhite" name="navButton"
+                    onclick="clickRedirect(document.getElementById('redic_cmds'))" id="redic_cmds">Comandos</button>
+                <button class="navOption navOption-thWhite" name="navButton"
+                    onclick="clickRedirect(document.getElementById('redic_inv'))" id="redic_inv">Invitación</button>
+                <button class="navOption navOption-thWhite" name="navButton"
+                    onclick="clickRedirect(document.getElementById('redic_srv'))" id="redic_srv">Servidor</button>
+                <button class="navOption navOption-thWhite" name="navButton"
+                    onclick="clickRedirect(document.getElementById('redic_vote'))" id="redic_vote">Vota!</button>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="nav_menu2">
+                <button class="navOption navOption-thWhite" name="navButton"
+                    onclick="mostMenu(document.getElementById('navMenu'))">Menu</button>
+            </ul>
+        </nav>
+    </div>
+    <header class="banner" id="particles-js"></header>
+    <div class="flex_content">
+        <img src="/api/public/assets/mapleWasted.png" class="image ocultarIzquierda" name="scrollByLeft">
+        <div class="container404 ocultarDerecha" name="scrollByRigth">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, reprehenderit pariatur quam optio fugit facilis corrupti totam! Atque soluta doloribus eos magni provident numquam repudiandae, ipsam minima accusantium veniam esse vero sequi quos dolorem adipisci harum dicta maxime minus animi, enim at! Quaerat enim ullam pariatur? Incidunt omnis, eaque optio perferendis officiis quas earum ut rerum praesentium. Ipsa maiores animi reiciendis unde dignissimos incidunt adipisci beatae architecto vero molestiae totam quos, optio odio et consectetur hic eos? Numquam quidem magni deserunt dolorem corporis repudiandae, hic architecto a amet, nemo nesciunt nostrum voluptatum eligendi aspernatur quos porro dignissimos rerum sapiente. Velit.</p>
+        </div>
+    </div>
+    <div id="footerTheme" class="fooTheme-white">
+        <div class="boxFooter">
+            <h2 id="clientUserTag"></h2>
+            <div class="params">
+                <a href="https://discord.gg/PKGhvUKaQN" class="paramsLink paramOption">Discord</a>
+                <a href="https://discord.com/oauth2/authorize?client_id=821452429409124451&scope=bot%20applications.commands&permissions=533923163350&redirect_uri=https%3A%2F%2Fcdnnekoapicacao.vanillank2006.repl.co%2Fapi%2Fthanks&response_type=code"
+                    class="paramsLink paramOption">Invitación</a>
+                <a href="https://top.gg/bot/821452429409124451/vote" class="paramsLink paramOption">Top.gg</a>
+            </div>
+        </div>
+        <div class="flexFooter">
+            <div class="terms">
+                <p>© 2021 <a href="" class="link">Maple bot.</a> All rights reserved. Made by <a href="" class="link"
+                        id="cacaoName"></a></p>
+                <p> Al usar el bot estas aceptando los <a href="" class="link">Terminos de uso</a> y la <a href=""
+                        class="link">Politica de privacidad</a></p>
+            </div>
+            <div class="switchBox">
+                <label class="switch" onchange="changeTheme()" id="onoff-theme">
+                    <input type="checkbox">
+                    <span class="slider round" id="onoff-button"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="api/public/scripts/scroll.js"></script>
+    <script type="text/javascript" src="api/public/scripts/scriptJS.js"></script>
+    <script type="text/javascript" src="api/public/scripts/thStyleJS.js"></script>
+    <script type="text/javascript" src="api/public/scripts/errors/404JS.js"></script>
+    <script type="text/javascript" src="api/public/plugins/particles/particles.js"></script>
+    <script type="text/javascript" src="api/public/plugins/particles/app.js"></script>
+    <script type="text/javascript" src="api/public/plugins/particles/lib/stats.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,14 @@
+
+.container404 {
+    margin: 2pc 35% 2pc 3%;
+    cursor: default;
+}
+.flex_content {
+    display: flex;
+    margin: 30px 0 0 5pc;
+    align-items: center;
+}
+.image {
+    width: 17pc;
+    filter: opacity(.5);
+}
