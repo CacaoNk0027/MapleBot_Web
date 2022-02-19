@@ -6,6 +6,17 @@
     cursor: default;
 }
 
+a.link {
+    text-decoration: none;
+    color: rgb(0, 115, 255);
+    transition: .3s;
+}
+
+a.link:hover {
+    text-decoration: none;
+    color: rgb(60, 148, 255)
+}
+
 .container {
     width: 93%;
     margin: auto;
