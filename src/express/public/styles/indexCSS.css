@@ -138,6 +138,7 @@ a.link:hover {
     z-index: -1;
     box-shadow: 0px 0px 15px;
 }
+
 .animar {
     animation: aparecer 1.3s;
 }
@@ -176,7 +177,7 @@ a.link:hover {
 }
 
 .paramsLink {
-    color:rgb(90, 90, 90);
+    color: rgb(90, 90, 90);
     transition: .2s;
     font-size: 20px;
     text-decoration: none;
@@ -184,7 +185,7 @@ a.link:hover {
 }
 
 .paramsLink:hover {
-    color:rgb(120, 120, 120);
+    color: rgb(120, 120, 120);
     text-decoration: none;
     font-size: 22px;
     padding: 5px;
@@ -252,10 +253,12 @@ a.link:hover {
         box-shadow: 0px 5px 15px 0px transparent;
         transform: translateY(0px);
     }
+
     50% {
         box-shadow: 0px 25px 15px 0px transparent;
         transform: translateY(-10px);
     }
+
     100% {
         box-shadow: 0px 5px 15px 0px transparent;
         transform: translateY(0px);
@@ -267,10 +270,12 @@ a.link:hover {
         box-shadow: 0px 25px 15px 0px transparent;
         transform: translateY(-10px);
     }
+
     50% {
         box-shadow: 0px 5px 15px 0px transparent;
         transform: translateY(0px);
     }
+
     100% {
         box-shadow: 0px 25px 15px 0px transparent;
         transform: translateY(-10px);
@@ -282,10 +287,12 @@ a.link:hover {
         box-shadow: 0px 5px 15px 0px;
         transform: translateY(0px);
     }
+
     50% {
         box-shadow: 0px 5px 15px 0px;
         transform: translateY(-10px);
     }
+
     100% {
         box-shadow: 0px 5px 15px 0px;
         transform: translateY(0px);
@@ -297,6 +304,7 @@ a.link:hover {
         opacity: 0;
         transform: translateY(30px)
     }
+
     100% {
         opacity: 1;
         transform: translateY(0px)
@@ -308,6 +316,7 @@ a.link:hover {
         opacity: 0;
         transform: translateX(100px)
     }
+
     100% {
         opacity: 1;
         transform: translateX(0px)
@@ -319,6 +328,7 @@ a.link:hover {
         opacity: 0;
         transform: translateX(-100px)
     }
+
     100% {
         opacity: 1;
         transform: translateX(0px)
@@ -330,6 +340,7 @@ a.link:hover {
         opacity: 1;
         transform: translateY(-350)
     }
+
     100% {
         opacity: 1;
         transform: translateY(43px)
@@ -347,20 +358,24 @@ a.link:hover {
         z-index: -1;
         box-shadow: 0px 0px 15px;
     }
+
     .flexFooter {
         display: block;
         align-items: center;
         justify-content: center;
     }
+
     .terms {
         width: auto;
         text-align: center;
         padding: 19px;
         font-size: 10px;
     }
+
     .terms p {
         margin: 5px 0px;
     }
+
     .switchBox {
         margin: 4px 17px 4px 0px;
         text-align: right;
@@ -372,15 +387,18 @@ a.link:hover {
         width: 220px;
         text-align: center;
     }
+
     .avatarBoxes {
         transform: translateY(-260px)
     }
+
     .avatar {
         width: 140px;
         height: 140px;
         border-radius: 50%;
         background-size: 140px;
     }
+
     .params {
         display: flex;
         font-weight: 500;
@@ -401,8 +419,8 @@ a.link:hover {
     }
 
     .show {
-		transform: translateY(43px);
-	}
+        transform: translateY(43px);
+    }
 
     .nav_menu2 button {
         padding: 10px 100px;
@@ -421,6 +439,6 @@ a.link:hover {
         align-items: center;
         gap: 20px;
         justify-content: space-between;
-        flex-direction: column;    
+        flex-direction: column;
     }
 }
