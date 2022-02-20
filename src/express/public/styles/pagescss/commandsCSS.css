@@ -1,0 +1,153 @@
+.cuadro_menu {
+    border-radius: 7px;
+    padding: 10px 20px 10px 20px;
+    margin: 5px 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px
+}
+
+.cuaderThemeDark {
+    transition: .4s;
+    background-color: #2a2a2a;
+}
+
+.cuaderThemeWhite {
+    transition: .4s;
+    background-color: #c1c1c1;
+}
+
+.sec_link {
+    color: rgb(0, 115, 255);
+    text-decoration: none;
+    transition: .2s;
+}
+
+.sec_link:hover {
+    color: rgb(60, 148, 255);
+    text-decoration: none;
+}
+
+.campo {
+    font-size: 17px;
+    font-weight: 500;
+    margin: 5px;
+    text-align: center;
+}
+
+.commands {
+    margin: 3% 12%;
+}
+
+.box_command h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.command {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 7px;
+}
+
+.cmd-xl-m2 {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.foo-imgCmd {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-column: 1/1;
+}
+
+.foo-imgCmd p {
+    font-weight: 600;
+    font-size: 14.5px;
+}
+
+.foo-imgCmd img {
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.cmd-xl-cdcOnt {
+    margin: 5px 10px;
+    text-align: center;
+}
+
+.cmd-xl-cdcOnt p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+@media (max-width: 650px) {
+    .cuadro_menu {
+        border-radius: 7px;
+        padding: 10px 20px 10px 20px;
+        margin: 5px 15px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px
+    }
+
+    .campo {
+        font-size: 15px;
+        font-weight: 500;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .commands {
+        margin: 1% 5%;
+    }
+
+    .box_command h2 {
+        text-align: center;
+    }
+
+    .command {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 7px;
+    }
+
+    .cmd-xl-m2 {
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .foo-imgCmd {
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        grid-column: 1/1;
+    }
+
+    .foo-imgCmd p {
+        font-weight: 600;
+        font-size: 14.5px;
+    }
+
+    .foo-imgCmd img {
+        height: 18px;
+        width: 18px;
+        margin-right: 10px;
+        border-radius: 50px;
+    }
+
+    .cmd-xl-cdcOnt {
+        margin: 5px 10px;
+        text-align: center;
+    }
+
+    .cmd-xl-cdcOnt p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+}

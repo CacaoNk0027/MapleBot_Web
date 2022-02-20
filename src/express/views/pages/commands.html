@@ -19,7 +19,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
-<body onload="uploadTheme(); clientUser(); cacaoName();" class="theme-white">
+<body onload="uploadTheme(); clientUser(); cacaoName(); uploadThemeCommands();" class="theme-white">
     <div class="inicialBar-thWhite" id="navBar">
         <nav class="nav_bar">
             <ul class="nav_menu boxesCelMenu-White" id="navMenu">
@@ -52,6 +52,80 @@
         <div class="avatar float mapleAvatarWhite" id="mapleAvatar"></div>
     </div>
     <div class="container">
+
+        <div class="cuadro_menu">
+			<div class="campo"><a href="#information" class="sec_link">Información</a></div>
+			<div class="campo"><a href="#misc" class="sec_link">Miscelaneo</a></div>
+			<div class="campo"><a href="#fun" class="sec_link">Diversión</a></div>
+			<div class="campo"><a href="#moderation" class="sec_link">Moderación</a></div>
+			<div class="campo"><a href="#anime" class="sec_link">Anime</a></div>
+			<div class="campo"><a href="#animals" class="sec_link">Animales</a></div>
+			<div class="campo"><a href="#configs" class="sec_link">Configuración</a></div>
+			<div class="campo"><a href="#action" class="sec_link">Acción</a></div>
+			<div class="campo"><a href="#reaction" class="sec_link">Reacción</a></div>
+			<div class="campo"><a href="#rpnsfw" class="sec_link">Rolplay Nsfw</a></div>
+			<div class="campo"><a href="#nsfw" class="sec_link">Nsfw</a></div>
+		</div>
+		<div class="commands">
+			<div class="box_command" id="information">
+				<h2>Información</h2>
+				<hr>
+				<div class="command" id="cmds-info">
+					
+				</div>
+			</div>
+			<div class="box_command" id="misc">
+				<h2>Miscelaneo</h2>
+				<hr>
+				<div class="command" id="cmds-misc"></div>
+			</div>
+			<div class="box_command" id="fun">
+				<h2>Diversión</h2>
+				<hr>
+				<div class="command" id="cmds-funs"></div>
+			</div>
+			<div class="box_command" id="moderation">
+				<h2>Moderación</h2>
+				<hr>
+				<div class="command" id="cmds-mods"></div>
+			</div>
+			<div class="box_command" id="anime">
+				<h2>Anime</h2>
+				<hr>
+				<div class="command" id="cmds-anim"></div>
+			</div>
+			<div class="box_command" id="animals">
+				<h2>Animales</h2>
+				<hr>
+				<div class="command" id="cmds-pets"></div>
+			</div>
+			<div class="box_command" id="configs">
+				<h2>Configuración</h2>
+				<hr>
+				<div class="command" id="cmds-conf"></div>
+			</div>
+			<div class="box_command" id="action">
+				<h2>Acción</h2>
+				<hr>
+				<div class="command" id="cmds-acti"></div>
+			</div>
+			<div class="box_command" id="reaction">
+				<h2>Reacción</h2>
+				<hr>
+				<div class="command" id="cmds-reac"></div>
+			</div>
+			<div class="box_command" id="rpnsfw">
+				<h2>Rolplay Nsfw</h2>
+				<hr>
+				<div class="command" id="cmds-rpnw"></div>
+			</div>
+			<div class="box_command" id="nsfw">
+				<h2>Nsfw</h2>
+				<hr>
+				<div class="command" id="cmds-nsfw"></div>
+			</div>
+		</div>
+
         <hr style="margin-top: 10px;">
         <div align="center">
             <div class="ocultar mapleImgDesp float" name="scroll" id="despImg"></div>
@@ -77,13 +151,13 @@
         </div>
         <div class="flexFooter">
             <div class="terms">
-                <p>© 2021 <a href="" class="link">Maple bot.</a> All rights reserved. Made by <a href="" class="link"
+                <p>© 2021 <a href="https://discord.com/users/821452429409124451" class="link">Maple bot.</a> All rights reserved. Made by <a href="https://discord.com/users/801603753631285308" class="link"
                         id="cacaoName"></a></p>
                 <p> Al usar el bot estas aceptando los <a href="/terms-of-use" class="link">Terminos de uso</a> y la <a href="/privacy-policy"
                         class="link">Politica de privacidad</a></p>
             </div>
             <div class="switchBox">
-                <label class="switch" onchange="changeTheme()" id="onoff-theme">
+                <label class="switch" onchange="changeTheme(); changeCommandsTheme()" id="onoff-theme">
                     <input type="checkbox">
                     <span class="slider round" id="onoff-button"></span>
                 </label>
@@ -93,6 +167,7 @@
     <script type="text/javascript" src="api/public/scripts/scroll.js"></script>
     <script type="text/javascript" src="api/public/scripts/scriptJS.js"></script>
     <script type="text/javascript" src="api/public/scripts/thStyleJS.js"></script>
+    <script type="text/javascript" src="api/public/scripts/pages/commandsJS.js"></script>
     <script type="text/javascript" src="api/public/plugins/particles/particles.js"></script>
     <script type="text/javascript" src="api/public/plugins/particles/app.js"></script>
     <script type="text/javascript" src="api/public/plugins/particles/lib/stats.js"></script>
