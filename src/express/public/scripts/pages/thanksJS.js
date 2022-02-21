@@ -8,7 +8,7 @@ function constructLength0 () {
     imagen.style.width = "250px";
     imagen.style.marginBottom = "20px";
     titulo.innerText = "Que haces aqui!?"
-    parrafo.innerText = "si estas en esta pagina es porque invitaste a la bot a su servidor de discord, salvo que hayas puesto el link asi tal cual sin autorizar y te encuentres en esta situación! ve a casa ahora mismo >:b"
+    parrafo.innerText = "si estas en esta pagina es porque invitaste a la bot a tu servidor de discord, salvo que hayas puesto el link asi tal cual sin autorizar y te encuentres en esta situación! ve a casa ahora mismo >:b"
     container.appendChild(imagen)
     container.appendChild(titulo)
     container.appendChild(parrafo)
