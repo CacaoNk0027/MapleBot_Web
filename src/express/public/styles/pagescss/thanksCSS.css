@@ -1,3 +1,9 @@
 .containerThanks {
     margin: 4pc 18pc;
 }
+
+@media (max-width: 650px) {
+    .containerThanks {
+        margin: 10px 20px;
+    }    
+}
