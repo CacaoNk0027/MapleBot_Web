@@ -8,6 +8,10 @@ router.get('/', (req, res) => {
     })
 })
 
+router.get('/thanks', async (req, res) => {
+    res.render('pages/thanks.html')
+})
+
 router.get('/paths', (req, res) => {
     var pageIncial = `${req.protocol}://${req.get('host')}/`
     let json = {

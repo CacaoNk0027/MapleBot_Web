@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Maple Bot | 404</title>
+    <title>Maple Bot | Thanks</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:site_name" content="Maple Bot Oficial">
@@ -12,9 +12,9 @@
     <meta name="description"
         content="La ruta del link que haz escrito es inexistente! por favor asegurate de escribir la correcta"
         data-ng-src="https://webmaplebotml.herokuapp.com/api/public/assets/iconMaple.png">
-    <link rel="stylesheet" href="https://webmaplebotml.herokuapp.com/api/public/styles/indexCSS.css">
-    <link rel="stylesheet" href="https://webmaplebotml.herokuapp.com/api/public/styles/themeCSS.css">
-    <link rel="stylesheet" href="https://webmaplebotml.herokuapp.com/api/public/styles/errors/err404CSS.css">
+    <link rel="stylesheet" href="http://localhost:449/api/public/styles/indexCSS.css">
+    <link rel="stylesheet" href="http://localhost:449/api/public/styles/themeCSS.css">
+    <link rel="stylesheet" href="http://localhost:449/api/public/styles/pagescss/thanksCSS.css">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -30,8 +30,6 @@
                 <button class="navOption navOption-thWhite" name="navButton"
                     onclick="clickRedirect(document.getElementById('redic_cmds'))" id="redic_cmds">Comandos</button>
                 <button class="navOption navOption-thWhite" name="navButton"
-                    onclick="clickRedirect(document.getElementById('redic_inv'))" id="redic_inv">Invitación</button>
-                <button class="navOption navOption-thWhite" name="navButton"
                     onclick="clickRedirect(document.getElementById('redic_srv'))" id="redic_srv">Servidor</button>
                 <button class="navOption navOption-thWhite" name="navButton"
                     onclick="clickRedirect(document.getElementById('redic_vote'))" id="redic_vote">Vota!</button>
@@ -45,25 +43,14 @@
         </nav>
     </div>
     <header class="banner" id="particles-js"></header>
-    <div class="flex_content">
-        <img src="https://webmaplebotml.herokuapp.com/api/public/assets/mapleWasted.png" class="image ocultarIzquierda"
-            name="scrollByLeft">
-        <div class="container404 ocultarDerecha" name="scrollByRigth">
-            <h1>404</h1>
-            <h3>Que ha pasao!?</h3>
-            <p>La ruta que tratabas de buscar <b>(<%= pathName %>)</b> no se ha podido encontrar, por lo que este error
-                se ha soltado...</p>
-            <p>Para regresar a casa y volver a intentar buscar la ruta puedes <a href="/" class="link">Presionar
-                    Aqui</a></p>
-        </div>
-    </div>
+    <div class="containerThanks" align="center" id="contenedor"></div>
     <div id="footerTheme" class="fooTheme-white">
         <div class="boxFooter">
             <h2 id="clientUserTag"></h2>
             <div class="params">
                 <a href="https://discord.gg/PKGhvUKaQN" class="paramsLink paramOption">Discord</a>
-                <a href="https://discord.com/oauth2/authorize?client_id=821452429409124451&scope=bot%20applications.commands&permissions=533923163350&redirect_uri=https%3A%2F%2Fcdnnekoapicacao.vanillank2006.repl.co%2Fapi%2Fthanks&response_type=code"
-                    class="paramsLink paramOption">Invitación</a>
+                <a href="/"
+                    class="paramsLink paramOption">Inicial</a>
                 <a href="https://top.gg/bot/821452429409124451/vote" class="paramsLink paramOption">Top.gg</a>
             </div>
         </div>
@@ -82,15 +69,13 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="https://webmaplebotml.herokuapp.com/api/public/scripts/scroll.js"></script>
-    <script type="text/javascript" src="https://webmaplebotml.herokuapp.com/api/public/scripts/scriptJS.js"></script>
-    <script type="text/javascript" src="https://webmaplebotml.herokuapp.com/api/public/scripts/thStyleJS.js"></script>
-    <script type="text/javascript"
-        src="https://webmaplebotml.herokuapp.com/api/public/plugins/particles/particles.js"></script>
-    <script type="text/javascript"
-        src="https://webmaplebotml.herokuapp.com/api/public/plugins/particles/app.js"></script>
-    <script type="text/javascript"
-        src="https://webmaplebotml.herokuapp.com/api/public/plugins/particles/lib/stats.js"></script>
+    <script type="text/javascript" src="http://localhost:449/api/public/scripts/scroll.js"></script>
+    <script type="text/javascript" src="http://localhost:449/api/public/scripts/scriptJS.js"></script>
+    <script type="text/javascript" src="http://localhost:449/api/public/scripts/thStyleJS.js"></script>
+    <script type="text/javascript" src="http://localhost:449/api/public/scripts/pages/thanksJS.js"></script>
+    <script type="text/javascript" src="http://localhost:449/api/public/plugins/particles/particles.js"></script>
+    <script type="text/javascript" src="http://localhost:449/api/public/plugins/particles/app.js"></script>
+    <script type="text/javascript" src="http://localhost:449/api/public/plugins/particles/lib/stats.js"></script>
 </body>
 
 </html>

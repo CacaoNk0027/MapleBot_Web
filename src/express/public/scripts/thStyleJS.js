@@ -13,7 +13,7 @@ let despImg = document.getElementById('despImg')
 let cuerpoWeb = document.body;
 
 function uploadTheme() {
-    if (document.head.firstElementChild.innerText == 'Maple Bot | 404') {
+    if (document.head.firstElementChild.innerText == 'Maple Bot | 404' || document.head.firstElementChild.innerText == "Maple Bot | Thanks") {
         if (modoTemaWeb == "oscuro") {
             themeSwitches.classList.add('cheese')
             if (cuerpoWeb.classList.contains('theme-white')) {
@@ -225,7 +225,7 @@ function uploadTheme() {
 }
 
 function changeTheme() {
-    if (document.head.firstElementChild.innerText == 'Maple Bot | 404') {
+    if (document.head.firstElementChild.innerText == 'Maple Bot | 404' || document.head.firstElementChild.innerText == "Maple Bot | Thanks") {
         if (cuerpoWeb.classList.contains('theme-white') && footerTheme.classList.contains('fooTheme-white')) {
             themeSwitches.classList.add('cheese')
             navBar.classList.remove('inicialBar-thWhite')
