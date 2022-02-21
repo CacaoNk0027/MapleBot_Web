@@ -2,7 +2,7 @@ function clickRedirect(element) {
     if (element.id == "redic_cmds") {
         window.location = "/commands"
     } else if (element.id == "redic_inv") {
-        window.open('https://discord.com/oauth2/authorize?client_id=821452429409124451&scope=bot%20applications.commands&permissions=533923163350&redirect_uri=https%3A%2F%2Fwebmaplebotml.herokuapp.com%2Fapi%2Fthanks&response_type=code')
+        window.open('https://discord.com/oauth2/authorize?client_id=821452429409124451&scope=bot%20applications.commands&permissions=1238029429974&redirect_uri=https%3A%2F%2Fwebmaplebotml.herokuapp.com%2Fapi%2Fthanks&response_type=code')
     } else if (element.id == "redic_srv") {
         window.open('https://discord.gg/PKGhvUKaQN')
     } else if (element.id == "redic_vote") {
