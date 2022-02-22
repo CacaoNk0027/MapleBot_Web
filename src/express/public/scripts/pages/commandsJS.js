@@ -266,7 +266,7 @@ async function anim() {
     }
 }
 
-acc()
+anim()
 
 async function reac() {
     let json = await fetch('https://restnekoapi.herokuapp.com/api/post').then(m => m.json())
