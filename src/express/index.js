@@ -14,7 +14,6 @@ router.get('/privacy-policy', async (req, res) => {
 })
 
 router.use('/commands', require('./routes/commands'))
-
 router.use('/api', require('./routes/api'))
 
 module.exports = router
