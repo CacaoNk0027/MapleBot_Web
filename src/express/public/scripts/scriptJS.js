@@ -40,3 +40,8 @@ async function userTagClient() {
     let clientUser_ = await fetch('https://nekoapi.vanillank2006.repl.co/api/users?user=client').then(c => c.json())
     document.getElementById('clientUserTag').innerText = clientUser_.usertag
 };
+
+async function cacaoName2() {
+    let cacaoUser_ = await fetch('https://nekoapi.vanillank2006.repl.co/api/users?user=cacao').then(c => c.json())
+    document.getElementById('cacaoName2').innerText = cacaoUser_.username
+}

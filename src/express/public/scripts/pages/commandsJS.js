@@ -533,3 +533,48 @@ function changeCommandsTheme() {
     }
     console.log(document.body.classList)
 }
+
+async function music() {
+    let json = await fetch('https://restnekoapi.herokuapp.com/api/post').then(m => m.json())
+    let cmds = await json.clientCommands.filter(c => c.category == "musica");
+    let numberMap = cmds.map(c => parseInt(c.id))
+    let numbersM = numberMap.sort(function (a, b) { return a - b })
+    for (var num of numbersM) {
+        var strings;
+        if (num.toString().length == 1) {
+            strings = "00" + num.toString();
+        } else if (num.toString().length == 2) {
+            strings = "0" + num.toString();
+        }
+        let obj = cmds.find(c => c.id == strings)
+
+        let infoBox = document.getElementById('cmds-music')
+        let divForCommand = document.createElement('div')
+        let foo = document.createElement('div')
+        let condCmd = document.createElement('div')
+        let img = document.createElement('img')
+        let idCommand = document.createElement('p')
+        let titleCommand = document.createElement('h3')
+        let descCommand = document.createElement('p')
+        img.src = "https://cdn.discordapp.com/emojis/829550591025741824.gif";
+        img.alt = "info";
+        idCommand.innerText = obj.id
+        titleCommand.innerText = obj.name
+        descCommand.innerText = obj.description
+        divForCommand.classList.add('boxCommand')
+        divForCommand.classList.add('cuaderWhite')
+        divForCommand.classList.add('cmd-xl-m2')
+        condCmd.classList.add('cmd-xl-cdcOnt')
+        foo.classList.add('foo-imgCmd')
+        foo.appendChild(img)
+        foo.appendChild(idCommand)
+        condCmd.appendChild(titleCommand)
+        condCmd.appendChild(descCommand)
+        divForCommand.appendChild(foo)
+        divForCommand.appendChild(condCmd)
+        infoBox.appendChild(divForCommand)
+
+    }
+}
+
+music()
