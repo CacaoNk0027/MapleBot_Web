@@ -9,6 +9,8 @@ async function info() {
             strings = "00" + num.toString();
         } else if (num.toString().length == 2) {
             strings = "0" + num.toString();
+        } else if(num.toString().length == 3) {
+            strings = num.toString()
         }
         let obj = cmds.find(c => c.id == strings)
 
@@ -54,6 +56,8 @@ async function misc() {
             strings = "00" + num.toString();
         } else if (num.toString().length == 2) {
             strings = "0" + num.toString();
+        } else if(num.toString().length == 3) {
+            strings = num.toString()
         }
         let obj = cmds.find(c => c.id == strings)
 
@@ -99,6 +103,8 @@ async function funs() {
             strings = "00" + num.toString();
         } else if (num.toString().length == 2) {
             strings = "0" + num.toString();
+        } else if(num.toString().length == 3) {
+            strings = num.toString()
         }
         let obj = cmds.find(c => c.id == strings)
 
@@ -139,11 +145,12 @@ async function mod() {
     let numberMap = cmds.map(c => parseInt(c.id))
     let numbersM = numberMap.sort(function (a, b) { return a - b })
     for (var num of numbersM) {
-        var strings;
         if (num.toString().length == 1) {
             strings = "00" + num.toString();
         } else if (num.toString().length == 2) {
             strings = "0" + num.toString();
+        } else if(num.toString().length == 3) {
+            strings = num.toString()
         }
         let obj = cmds.find(c => c.id == strings)
 
@@ -184,11 +191,12 @@ async function acc() {
     let numberMap = cmds.map(c => parseInt(c.id))
     let numbersM = numberMap.sort(function (a, b) { return a - b })
     for (var num of numbersM) {
-        var strings;
         if (num.toString().length == 1) {
             strings = "00" + num.toString();
         } else if (num.toString().length == 2) {
             strings = "0" + num.toString();
+        } else if(num.toString().length == 3) {
+            strings = num.toString()
         }
         let obj = cmds.find(c => c.id == strings)
 
@@ -234,6 +242,8 @@ async function anim() {
             strings = "00" + num.toString();
         } else if (num.toString().length == 2) {
             strings = "0" + num.toString();
+        } else if(num.toString().length == 3) {
+            strings = num.toString()
         }
         let obj = cmds.find(c => c.id == strings)
 
@@ -279,6 +289,8 @@ async function reac() {
             strings = "00" + num.toString();
         } else if (num.toString().length == 2) {
             strings = "0" + num.toString();
+        } else if(num.toString().length == 3) {
+            strings = num.toString()
         }
         let obj = cmds.find(c => c.id == strings)
 
@@ -324,6 +336,8 @@ async function pets() {
             strings = "00" + num.toString();
         } else if (num.toString().length == 2) {
             strings = "0" + num.toString();
+        } else if(num.toString().length == 3) {
+            strings = num.toString()
         }
         let obj = cmds.find(c => c.id == strings)
 
@@ -369,6 +383,8 @@ async function config() {
             strings = "00" + num.toString();
         } else if (num.toString().length == 2) {
             strings = "0" + num.toString();
+        } else if(num.toString().length == 3) {
+            strings = num.toString()
         }
         let obj = cmds.find(c => c.id == strings)
 
@@ -414,6 +430,8 @@ async function rpnsfw() {
             strings = "00" + num.toString();
         } else if (num.toString().length == 2) {
             strings = "0" + num.toString();
+        } else if(num.toString().length == 3) {
+            strings = num.toString()
         }
         let obj = cmds.find(c => c.id == strings)
 
@@ -459,6 +477,8 @@ async function nsfw() {
             strings = "00" + num.toString();
         } else if (num.toString().length == 2) {
             strings = "0" + num.toString();
+        } else if(num.toString().length == 3) {
+            strings = num.toString()
         }
         let obj = cmds.find(c => c.id == strings)
 
@@ -540,11 +560,12 @@ async function music() {
     let numberMap = cmds.map(c => parseInt(c.id))
     let numbersM = numberMap.sort(function (a, b) { return a - b })
     for (var num of numbersM) {
-        var strings;
         if (num.toString().length == 1) {
             strings = "00" + num.toString();
         } else if (num.toString().length == 2) {
             strings = "0" + num.toString();
+        } else if(num.toString().length == 3) {
+            strings = num.toString()
         }
         let obj = cmds.find(c => c.id == strings)
 
