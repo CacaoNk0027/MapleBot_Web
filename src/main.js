@@ -41,11 +41,11 @@ app.use(cors())
 
 app.use(require('./express/index.js'))
 
-app.use('/api/public', express.static(path.join(__dirname, 'express/public')))
+app.use('/', express.static(path.join(__dirname, 'express/public')))
 
 app.get('/api/*', (req, res) => {
     var pageIncial = `${req.protocol}://${req.get('host')}/`
-    res.json({
+    res.status(404).json({
         statusCode: 404,
         description: 'Elemento no encontrado',
         link_inicial: `${pageIncial}`
@@ -53,7 +53,7 @@ app.get('/api/*', (req, res) => {
 })
 
 app.get('*', (req, res) => {
-    res.render('errors/error404.html', {
+    res.status(404).render('errors/error404.html', {
         pathName: req.path
     })
 })
