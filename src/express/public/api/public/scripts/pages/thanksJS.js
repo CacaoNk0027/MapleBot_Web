@@ -4,7 +4,7 @@ function constructLength0 () {
     let imagen = document.createElement('img')
     let titulo = document.createElement('h2')
     let parrafo = document.createElement('p')
-    imagen.src = "https://webmaplebotml.herokuapp.com/api/public/assets/azukiAngry.png"
+    imagen.src = "https://webmaplebotml.up.railway.app/api/public/assets/azukiAngry.png"
     imagen.style.width = "250px";
     imagen.style.marginBottom = "20px";
     titulo.innerText = "Que haces aqui!?"
@@ -17,7 +17,7 @@ function constructHasError () {
     let imagen = document.createElement('img')
     let titulo = document.createElement('h2')
     let parrafo = document.createElement('p')
-    imagen.src = "https://webmaplebotml.herokuapp.com/api/public/assets/mapleWasted.png"
+    imagen.src = "https://webmaplebotml.up.railway.app/api/public/assets/mapleWasted.png"
     imagen.style.width = "250px";
     imagen.style.marginBottom = "20px";
     titulo.innerText = "No Autorizada"
@@ -30,7 +30,7 @@ function constructHasCode () {
     let imagen = document.createElement('img')
     let titulo = document.createElement('h2')
     let parrafo = document.createElement('p')
-    imagen.src = "https://webmaplebotml.herokuapp.com/api/public/assets/mapleLove.png"
+    imagen.src = "https://webmaplebotml.up.railway.app/api/public/assets/mapleLove.png"
     imagen.style.width = "250px";
     imagen.style.marginBottom = "20px";
     titulo.innerText = "Gracias!"

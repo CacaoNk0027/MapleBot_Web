@@ -1,5 +1,5 @@
 async function info() {
-    let json = await fetch('https://restnekoapi.herokuapp.com/api/post').then(m => m.json())
+    let json = await fetch('https://nekoapi.vanillank2006.repl.co/api/post').then(m => m.json())
     let cmds = await json.clientCommands.filter(c => c.category == "informacion");
     let numberMap = cmds.map(c => parseInt(c.id))
     let numbersM = numberMap.sort(function (a, b) { return a - b })
@@ -46,7 +46,7 @@ async function info() {
 info()
 
 async function misc() {
-    let json = await fetch('https://restnekoapi.herokuapp.com/api/post').then(m => m.json())
+    let json = await fetch('https://nekoapi.vanillank2006.repl.co/api/post').then(m => m.json())
     let cmds = await json.clientCommands.filter(c => c.category == "miscelaneo");
     let numberMap = cmds.map(c => parseInt(c.id))
     let numbersM = numberMap.sort(function (a, b) { return a - b })
@@ -93,7 +93,7 @@ async function misc() {
 misc()
 
 async function funs() {
-    let json = await fetch('https://restnekoapi.herokuapp.com/api/post').then(m => m.json())
+    let json = await fetch('https://nekoapi.vanillank2006.repl.co/api/post').then(m => m.json())
     let cmds = await json.clientCommands.filter(c => c.category == "diversion");
     let numberMap = cmds.map(c => parseInt(c.id))
     let numbersM = numberMap.sort(function (a, b) { return a - b })
@@ -140,7 +140,7 @@ async function funs() {
 funs()
 
 async function mod() {
-    let json = await fetch('https://restnekoapi.herokuapp.com/api/post').then(m => m.json())
+    let json = await fetch('https://nekoapi.vanillank2006.repl.co/api/post').then(m => m.json())
     let cmds = await json.clientCommands.filter(c => c.category == "moderacion");
     let numberMap = cmds.map(c => parseInt(c.id))
     let numbersM = numberMap.sort(function (a, b) { return a - b })
@@ -186,7 +186,7 @@ async function mod() {
 mod()
 
 async function acc() {
-    let json = await fetch('https://restnekoapi.herokuapp.com/api/post').then(m => m.json())
+    let json = await fetch('https://nekoapi.vanillank2006.repl.co/api/post').then(m => m.json())
     let cmds = await json.clientCommands.filter(c => c.category == "accion");
     let numberMap = cmds.map(c => parseInt(c.id))
     let numbersM = numberMap.sort(function (a, b) { return a - b })
@@ -232,7 +232,7 @@ async function acc() {
 acc()
 
 async function anim() {
-    let json = await fetch('https://restnekoapi.herokuapp.com/api/post').then(m => m.json())
+    let json = await fetch('https://nekoapi.vanillank2006.repl.co/api/post').then(m => m.json())
     let cmds = await json.clientCommands.filter(c => c.category == "anime");
     let numberMap = cmds.map(c => parseInt(c.id))
     let numbersM = numberMap.sort(function (a, b) { return a - b })
@@ -279,7 +279,7 @@ async function anim() {
 anim()
 
 async function reac() {
-    let json = await fetch('https://restnekoapi.herokuapp.com/api/post').then(m => m.json())
+    let json = await fetch('https://nekoapi.vanillank2006.repl.co/api/post').then(m => m.json())
     let cmds = await json.clientCommands.filter(c => c.category == "reaccion");
     let numberMap = cmds.map(c => parseInt(c.id))
     let numbersM = numberMap.sort(function (a, b) { return a - b })
@@ -326,7 +326,7 @@ async function reac() {
 reac()
 
 async function pets() {
-    let json = await fetch('https://restnekoapi.herokuapp.com/api/post').then(m => m.json())
+    let json = await fetch('https://nekoapi.vanillank2006.repl.co/api/post').then(m => m.json())
     let cmds = await json.clientCommands.filter(c => c.category == "animales");
     let numberMap = cmds.map(c => parseInt(c.id))
     let numbersM = numberMap.sort(function (a, b) { return a - b })
@@ -373,7 +373,7 @@ async function pets() {
 pets()
 
 async function config() {
-    let json = await fetch('https://restnekoapi.herokuapp.com/api/post').then(m => m.json())
+    let json = await fetch('https://nekoapi.vanillank2006.repl.co/api/post').then(m => m.json())
     let cmds = await json.clientCommands.filter(c => c.category == "configuracion");
     let numberMap = cmds.map(c => parseInt(c.id))
     let numbersM = numberMap.sort(function (a, b) { return a - b })
@@ -420,7 +420,7 @@ async function config() {
 config()
 
 async function rpnsfw() {
-    let json = await fetch('https://restnekoapi.herokuapp.com/api/post').then(m => m.json())
+    let json = await fetch('https://nekoapi.vanillank2006.repl.co/api/post').then(m => m.json())
     let cmds = await json.clientCommands.filter(c => c.category == "rp_nsfw");
     let numberMap = cmds.map(c => parseInt(c.id))
     let numbersM = numberMap.sort(function (a, b) { return a - b })
@@ -467,7 +467,7 @@ async function rpnsfw() {
 rpnsfw()
 
 async function nsfw() {
-    let json = await fetch('https://restnekoapi.herokuapp.com/api/post').then(m => m.json())
+    let json = await fetch('https://nekoapi.vanillank2006.repl.co/api/post').then(m => m.json())
     let cmds = await json.clientCommands.filter(c => c.category == "nsfw");
     let numberMap = cmds.map(c => parseInt(c.id))
     let numbersM = numberMap.sort(function (a, b) { return a - b })
@@ -555,7 +555,7 @@ function changeCommandsTheme() {
 }
 
 async function music() {
-    let json = await fetch('https://restnekoapi.herokuapp.com/api/post').then(m => m.json())
+    let json = await fetch('https://nekoapi.vanillank2006.repl.co/api/post').then(m => m.json())
     let cmds = await json.clientCommands.filter(c => c.category == "musica");
     let numberMap = cmds.map(c => parseInt(c.id))
     let numbersM = numberMap.sort(function (a, b) { return a - b })
