@@ -5,13 +5,11 @@ async function users() {
     let willyDiv = document.getElementById('willyAvatar')
     
     let CacaoUser_ = await fetch('https://nekoapi.vanillank2006.repl.co/api/users?user=cacao').then(c => c.json())
-    let KrazyUser = await fetch('https://nekoapi.vanillank2006.repl.co/api/users?user=krazy').then(c => c.json())
     let JimUser = await fetch('https://nekoapi.vanillank2006.repl.co/api/users?user=jim').then(c => c.json())
     let WillyUser = await fetch('https://nekoapi.vanillank2006.repl.co/api/users?user=willy').then(c => c.json())
 
     cacaoDiv.style.backgroundImage = `url(${CacaoUser_.avatar})`
     jimDiv.style.backgroundImage =`url(${JimUser.avatar})`
-    krazyDiv.style.backgroundImage = `url(${KrazyUser.avatar})`
     willyDiv.style.backgroundImage = `url(${WillyUser.avatar})`
 
 }; users()
@@ -20,17 +18,14 @@ async function users() {
 async function users_2() {
     let cacaoDiv = document.getElementById('cacaoAvatar2')
     let jimDiv = document.getElementById('jimAvatar2')
-    let krazyDiv = document.getElementById('krazyAvatar2')
     let willyDiv = document.getElementById('willyAvatar2')
     
     let CacaoUser_ = await fetch('https://nekoapi.vanillank2006.repl.co/api/users?user=cacao').then(c => c.json())
-    let KrazyUser = await fetch('https://nekoapi.vanillank2006.repl.co/api/users?user=krazy').then(c => c.json())
     let JimUser = await fetch('https://nekoapi.vanillank2006.repl.co/api/users?user=jim').then(c => c.json())
     let WillyUser = await fetch('https://nekoapi.vanillank2006.repl.co/api/users?user=willy').then(c => c.json())
 
     cacaoDiv.style.backgroundImage = `url(${CacaoUser_.avatar})`
     jimDiv.style.backgroundImage =`url(${JimUser.avatar})`
-    krazyDiv.style.backgroundImage = `url(${KrazyUser.avatar})`
     willyDiv.style.backgroundImage = `url(${WillyUser.avatar})`
 
 }; users_2()
@@ -78,13 +73,6 @@ async function jim() {
     userName.innerText = clientUser_.username
     userTag.innerText = clientUser_.discriminator
 }; jim()
-async function krazy() {
-    let userName = document.getElementById('userNameKrazy')
-    let userTag = document.getElementById('userTagKrazy')
-    let clientUser_ = await fetch('https://nekoapi.vanillank2006.repl.co/api/users?user=krazy').then(c => c.json())
-    userName.innerText = clientUser_.username
-    userTag.innerText = clientUser_.discriminator
-}; krazy()
 async function willy() {
     let userName = document.getElementById('userNameWilly')
     let userTag = document.getElementById('userTagWilly')
@@ -107,13 +95,6 @@ async function jim2() {
     userName.innerText = clientUser_.username
     userTag.innerText = clientUser_.discriminator
 }; jim2()
-async function krazy2() {
-    let userName = document.getElementById('userNameKrazy2')
-    let userTag = document.getElementById('userTagKrazy2')
-    let clientUser_ = await fetch('https://nekoapi.vanillank2006.repl.co/api/users?user=krazy').then(c => c.json())
-    userName.innerText = clientUser_.username
-    userTag.innerText = clientUser_.discriminator
-}; krazy2()
 async function willy2() {
     let userName = document.getElementById('userNameWilly2')
     let userTag = document.getElementById('userTagWilly2')
