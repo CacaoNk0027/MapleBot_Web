@@ -164,9 +164,11 @@
 .boxImgTeam {
     display: grid;
     text-align: center;
-    margin: 50px 80px;
-    grid-template-columns: repeat(4, 1fr);
+    margin: 50px auto;
+    grid-template-columns: repeat(3, 1fr);
     gap: 100px;
+    align-items: center;
+    justify-items: center;
 }
 
 .helperAvatar {
@@ -203,9 +205,10 @@
 .boxTextTeam {
     display: grid;
     text-align: center;
-    margin: 50px 80px;
-    grid-template-columns: repeat(4, 1fr);
+    margin: 50px auto;
+    grid-template-columns: repeat(3, 1fr);
     gap: 90px;
+    justify-items: center;
 }
 
 .aparecerTexto {
