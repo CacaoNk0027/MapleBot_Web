@@ -116,7 +116,7 @@ async function funs() {
         let idCommand = document.createElement('p')
         let titleCommand = document.createElement('h3')
         let descCommand = document.createElement('p')
-        img.src = "https://www.webmaplebot.ml/images/diversion.gif";
+        img.src = "https://webmaplebotml.up.railway.app/api/public/assets/diversion.gif";
         img.alt = "info";
         idCommand.innerText = obj.id
         titleCommand.innerText = obj.name
@@ -162,7 +162,7 @@ async function mod() {
         let idCommand = document.createElement('p')
         let titleCommand = document.createElement('h3')
         let descCommand = document.createElement('p')
-        img.src = "https://www.webmaplebot.ml/images/moderacion.png";
+        img.src = "https://webmaplebotml.up.railway.app/api/public/assets/moderacion.png";
         img.alt = "info";
         idCommand.innerText = obj.id
         titleCommand.innerText = obj.name
@@ -208,7 +208,7 @@ async function acc() {
         let idCommand = document.createElement('p')
         let titleCommand = document.createElement('h3')
         let descCommand = document.createElement('p')
-        img.src = "https://www.webmaplebot.ml/images/action.gif";
+        img.src = "https://webmaplebotml.up.railway.app/api/public/assets/action.gif";
         img.alt = "info";
         idCommand.innerText = obj.id
         titleCommand.innerText = obj.name
@@ -396,7 +396,7 @@ async function config() {
         let idCommand = document.createElement('p')
         let titleCommand = document.createElement('h3')
         let descCommand = document.createElement('p')
-        img.src = "https://www.webmaplebot.ml/images/config.png";
+        img.src = "https://webmaplebotml.up.railway.app/api/public/assets/config.png";
         img.alt = "info";
         idCommand.innerText = obj.id
         titleCommand.innerText = obj.name
