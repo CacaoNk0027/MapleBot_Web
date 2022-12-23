@@ -125,7 +125,7 @@ async function willy2() {
 const elementosHTML_4 = document.querySelectorAll('.contador_cantidad')
 
 async function clientFetch() {
-    let json = await fetch('https://restnekoapi.herokuapp.com/api/post/').then(m => m.json())
+    let json = await fetch('https://nekoapi.vanillank2006.repl.co/api/post/').then(m => m.json())
     document.getElementById('servers').cantidadtotal = json.clientGuilds
     document.getElementById('commands').cantidadtotal = json.clientCommands.length
     document.getElementById('users').cantidadtotal = json.clientMembers
