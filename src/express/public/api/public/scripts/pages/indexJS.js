@@ -132,7 +132,7 @@ async function clientFetch() {
     document.getElementById('votes').cantidadtotal = json.clientVotes
 }
 
-clientFetch()
+clientFetch();
 
 window.addEventListener('DOMContentLoaded', function() {
     const contadores = document.querySelectorAll('.contador_cantidad')
