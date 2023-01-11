@@ -13,7 +13,7 @@
     "Bot Discord",
     "Pagina Web"
   ],
-  "author": "CacaoNk0027",
+  "author": "CacaoNk0027 <scherzodjs@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

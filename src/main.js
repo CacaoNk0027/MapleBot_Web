@@ -5,9 +5,9 @@
 
 
 /** dependencias iniciales */
+
 const express = require('express');
 const cors = require('cors')
-// const mongoose = require('mongoose');
 
 /** dependencias secundarias */
 
@@ -17,13 +17,6 @@ const path = require('path');
 require('dotenv').config()
 
 let port = parseInt(process.env['PORT'])
-
-/** conexion a mongoose */
-
-// mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-// mongoose.connection.once('open', () => {
-//     console.log('Database conected');
-// });
 
 /** express app */
 
