@@ -164,8 +164,13 @@ a.link:hover {
 }
 
 div#footerTheme {
-    position: absolute;
+    position: relative;
     bottom: 0;
+}
+
+.boxFooter {
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 .params {
