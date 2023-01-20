@@ -6,7 +6,7 @@
   "scripts": {
     "gitUp": "git add . && git commit -am \"make it better\"",
     "start": "node .",
-    "dev": "nodemon node ."
+    "test": "nodemon node ."
   },
   "keywords": [
     "Maple Bot",
