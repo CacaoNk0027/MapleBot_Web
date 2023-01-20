@@ -9,11 +9,6 @@
     align-items: center;
 }
 
-div#footerTheme {
-    position: fixed;
-    bottom: 0;
-}
-
 .image {
     width: 17pc;
     filter: opacity(.5);
