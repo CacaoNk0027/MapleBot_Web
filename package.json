@@ -4,7 +4,7 @@
   "description": "Pagina web de maple bot",
   "main": "src/main.js",
   "scripts": {
-    "gitUp": "git add . && git commit -am \"make it better\"",
+    "uptogit": "git add . && git commit -am \"make it better\"",
     "start": "node .",
     "test": "nodemon node ."
   },
