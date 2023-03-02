@@ -168,6 +168,10 @@ a.link:hover {
     margin-bottom: 15px;
 }
 
+.resize {
+    width: 40%;
+}
+
 .params {
     display: flex;
     align-items: center;
