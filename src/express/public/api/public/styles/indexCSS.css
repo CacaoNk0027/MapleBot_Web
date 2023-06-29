@@ -426,6 +426,11 @@ a.link:hover {
         transform: translateY(43px);
     }
 
+    .resize {
+        width: 80%;
+        margin-inline: 10%;
+    }
+
     .nav_menu2 button {
         padding: 10px 100px;
     }
